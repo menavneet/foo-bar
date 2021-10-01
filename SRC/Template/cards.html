@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #poster-1 {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #poster-2 {
+            position: relative;
+            top: 30px;
+            right: 170px;
+
+        }
+
+        #poster-3 {
+            position: relative;
+            top: 60px;
+            right: 340px;
+        }
+
+        .card {
+            z-index: 0;
+            border: solid 1px lightgray;
+            border-radius: 3px;
+            padding: 3px;
+            background-color: #e0e0e0ff;
+        }
+
+        .card:hover {
+            z-index: 10;
+            /* transition: "z-index"; */
+        }
+
+        .card-group {
+            display: flex;
+        }
+
+        .card-group:hover .text-over{
+            display: inline;
+        }
+        .text-over{
+            display: none;
+            position: relative;
+            bottom:60px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: #ffffff55;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-group">
+        <div class="card" id="poster-1">
+            <img src="https://picsum.photos/id/237/200/300" alt="Hello" />
+            <div class="text-over">Animal</div>
+        </div>
+        <div class="card" id="poster-2"><img src="https://picsum.photos/id/238/200/300" alt="Hello" /></div>
+        <div class="card" id="poster-3"><img src="https://picsum.photos/id/239/200/300" alt="Hello" /></div>
+    </div>
+</body>
+
+</html>

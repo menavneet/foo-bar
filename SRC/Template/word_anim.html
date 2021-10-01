@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #anime{
+            animation-play-state: running;
+            /* content: ""; */
+            width:100px ;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            height: 100px;
+            background-color: red;   
+        }
+        #anime::after{
+            content: "";
+        }
+        #anime:hover::after{
+            animation: identifier 2s forwards;
+
+        }
+        @keyframes identifier {
+
+            0%{
+                content: "H";
+            }
+            25%{
+                content: "He";
+            }
+            50%{
+                content: "Hel";
+            }
+            75%{
+                content: "Hell";
+            }
+            100%{
+                content: "Hello";
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="anime"></div>
+</body>
+</html>

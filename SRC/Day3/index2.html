@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @media (min-width:400px) {
+            .box{
+                /* background-color: red; */
+                display: flex;
+                flex-direction: row;
+
+            }
+        }
+        div{
+            margin: 1px;
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+        .box-items{
+            border: solid 1px lightgrey;
+            flex-basis: 30%;
+            height: 100px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: opacity 1s ;
+        }
+        .box-items:hover{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="box">
+        <div class="box-items" style="background-image: url('https://picsum.photos/seed/picsum/400/300')"></div>
+        <div class="box-items" style="background-image: url('https://picsum.photos/seed/picsum/400/300')"></div>
+        <div class="box-items" style="background-image: url('https://picsum.photos/seed/picsum/400/300')"></div>
+        <div class="box-items" style="background-image: url('https://picsum.photos/seed/picsum/400/300')"></div>
+    </div>
+    
+</body>
+</html>

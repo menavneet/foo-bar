@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        h1{
+            font-size: 4em;
+        }
+        .navbar{
+            display: flex;
+            flex-flow: row-reverse;
+            position: sticky;
+            top: 0px;    
+            background-color: #f0f0f0;    
+            z-index: 10;    
+        }
+        .nav-item{
+            text-align: center;
+            flex-basis: 200px;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .nav-item:hover{
+            background-color: lightgray;
+            color: salmon;
+        }
+        .page-body{
+            display: flex;
+            align-items: flex-start;
+        }
+        .context{
+            flex:10;
+            /* min-width: 20%; */
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 50px;
+        }
+        .content{
+            padding: 0 10px;
+            flex: 10;
+        }
+        .context-item{
+            text-align: center;
+            padding: 3px;
+            border-bottom: solid 2px transparent;
+        }
+        .context-item:hover{
+            border-bottom: solid 2px salmon;
+            background-color: #f0f0f0;
+        }
+        .context-item>a{
+                color: black;
+                text-decoration: none;
+            }
+        .card{
+            margin-top: 20px;
+            padding: 2px 10px;
+            border: solid 1px lightgray;
+            margin: 3px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1 style="text-align: center;"> Main Title</h1>
+    </div>
+    <div class="navbar">
+        <div class="nav-item">Link 1</div>
+        <div class="nav-item">Link 2</div>
+        <div class="nav-item">Link 3</div>
+        <div class="nav-item">Link 4</div>
+    </div>
+    <div class="page-body">
+        <div class="context">
+            <img src="https://picsum.photos/id/238/500/500" alt="Hello" />
+        </div>
+        <div class="content">
+            <div class="card" id="section_1">
+                <h3>Section 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, nisi vitae tempor scelerisque,
+                    dolor mauris faucibus erat, vitae faucibus odio nisl at lorem. Integer sit amet orci purus. Nunc vel
+                    odio bibendum, semper augue vestibulum, elementum mi. Phasellus at luctus ex. Vivamus nec luctus
+                    orci, sit amet placerat lorem. Maecenas ultricies leo id leo faucibus tincidunt. Vestibulum molestie
+                    in dolor vitae gravida. Etiam convallis, mi sed sodales vulputate, nibh urna ullamcorper lorem, quis
+                    hendrerit justo quam et ex. Etiam at placerat augue. Phasellus in dapibus odio. Morbi commodo, nunc
+                    vel sodales elementum, nibh lacus euismod libero, ac tincidunt felis nisl eu sapien. Nulla facilisi.
+                    Donec consequat ultrices odio, quis egestas augue placerat sit amet. Proin eu risus nec massa cursus
+                    cursus sed sed dui.
+                </p>
+                <p>
+                    Aliquam in dictum quam. Aenean ut aliquet lorem. Pellentesque ac nisl condimentum, luctus leo eget,
+                    sagittis elit. Integer arcu dui, sagittis a libero et, tempor mattis diam. Pellentesque at ultricies
+                    est. Nullam nisl ex, egestas non ornare eget, tristique porttitor lectus. Vestibulum tempus sit amet
+                    lorem nec tincidunt. Ut at sodales est. Suspendisse laoreet risus ac libero efficitur eleifend.
+                    Suspendisse bibendum lectus arcu, at auctor tortor egestas eget. In egestas eleifend lacus, id
+                    dictum magna eleifend eu. Mauris posuere mi lorem, non porta diam imperdiet quis. Phasellus vel
+                    magna eu nibh dapibus dapibus vel eget ligula.
+                </p>
+            </div>
+            <div class="card" id="section_2">
+                <h3>Section 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, nisi vitae tempor scelerisque,
+                    dolor mauris faucibus erat, vitae faucibus odio nisl at lorem. Integer sit amet orci purus. Nunc vel
+                    odio bibendum, semper augue vestibulum, elementum mi. Phasellus at luctus ex. Vivamus nec luctus
+                    orci, sit amet placerat lorem. Maecenas ultricies leo id leo faucibus tincidunt. Vestibulum molestie
+                    in dolor vitae gravida. Etiam convallis, mi sed sodales vulputate, nibh urna ullamcorper lorem, quis
+                    hendrerit justo quam et ex. Etiam at placerat augue. Phasellus in dapibus odio. Morbi commodo, nunc
+                    vel sodales elementum, nibh lacus euismod libero, ac tincidunt felis nisl eu sapien. Nulla facilisi.
+                    Donec consequat ultrices odio, quis egestas augue placerat sit amet. Proin eu risus nec massa cursus
+                    cursus sed sed dui.
+                </p>
+                <p>
+                    Aliquam in dictum quam. Aenean ut aliquet lorem. Pellentesque ac nisl condimentum, luctus leo eget,
+                    sagittis elit. Integer arcu dui, sagittis a libero et, tempor mattis diam. Pellentesque at ultricies
+                    est. Nullam nisl ex, egestas non ornare eget, tristique porttitor lectus. Vestibulum tempus sit amet
+                    lorem nec tincidunt. Ut at sodales est. Suspendisse laoreet risus ac libero efficitur eleifend.
+                    Suspendisse bibendum lectus arcu, at auctor tortor egestas eget. In egestas eleifend lacus, id
+                    dictum magna eleifend eu. Mauris posuere mi lorem, non porta diam imperdiet quis. Phasellus vel
+                    magna eu nibh dapibus dapibus vel eget ligula.
+                </p>
+            </div>
+            <div class="card" id="section_3">
+                <h3>Section 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, nisi vitae tempor scelerisque,
+                    dolor mauris faucibus erat, vitae faucibus odio nisl at lorem. Integer sit amet orci purus. Nunc vel
+                    odio bibendum, semper augue vestibulum, elementum mi. Phasellus at luctus ex. Vivamus nec luctus
+                    orci, sit amet placerat lorem. Maecenas ultricies leo id leo faucibus tincidunt. Vestibulum molestie
+                    in dolor vitae gravida. Etiam convallis, mi sed sodales vulputate, nibh urna ullamcorper lorem, quis
+                    hendrerit justo quam et ex. Etiam at placerat augue. Phasellus in dapibus odio. Morbi commodo, nunc
+                    vel sodales elementum, nibh lacus euismod libero, ac tincidunt felis nisl eu sapien. Nulla facilisi.
+                    Donec consequat ultrices odio, quis egestas augue placerat sit amet. Proin eu risus nec massa cursus
+                    cursus sed sed dui.
+                </p>
+                <p>
+                    Aliquam in dictum quam. Aenean ut aliquet lorem. Pellentesque ac nisl condimentum, luctus leo eget,
+                    sagittis elit. Integer arcu dui, sagittis a libero et, tempor mattis diam. Pellentesque at ultricies
+                    est. Nullam nisl ex, egestas non ornare eget, tristique porttitor lectus. Vestibulum tempus sit amet
+                    lorem nec tincidunt. Ut at sodales est. Suspendisse laoreet risus ac libero efficitur eleifend.
+                    Suspendisse bibendum lectus arcu, at auctor tortor egestas eget. In egestas eleifend lacus, id
+                    dictum magna eleifend eu. Mauris posuere mi lorem, non porta diam imperdiet quis. Phasellus vel
+                    magna eu nibh dapibus dapibus vel eget ligula.
+                </p>
+            </div>
+            <div class="card" id="section_4">
+                <h3>Section 4</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, nisi vitae tempor scelerisque,
+                    dolor mauris faucibus erat, vitae faucibus odio nisl at lorem. Integer sit amet orci purus. Nunc vel
+                    odio bibendum, semper augue vestibulum, elementum mi. Phasellus at luctus ex. Vivamus nec luctus
+                    orci, sit amet placerat lorem. Maecenas ultricies leo id leo faucibus tincidunt. Vestibulum molestie
+                    in dolor vitae gravida. Etiam convallis, mi sed sodales vulputate, nibh urna ullamcorper lorem, quis
+                    hendrerit justo quam et ex. Etiam at placerat augue. Phasellus in dapibus odio. Morbi commodo, nunc
+                    vel sodales elementum, nibh lacus euismod libero, ac tincidunt felis nisl eu sapien. Nulla facilisi.
+                    Donec consequat ultrices odio, quis egestas augue placerat sit amet. Proin eu risus nec massa cursus
+                    cursus sed sed dui.
+                </p>
+                <p>
+                    Aliquam in dictum quam. Aenean ut aliquet lorem. Pellentesque ac nisl condimentum, luctus leo eget,
+                    sagittis elit. Integer arcu dui, sagittis a libero et, tempor mattis diam. Pellentesque at ultricies
+                    est. Nullam nisl ex, egestas non ornare eget, tristique porttitor lectus. Vestibulum tempus sit amet
+                    lorem nec tincidunt. Ut at sodales est. Suspendisse laoreet risus ac libero efficitur eleifend.
+                    Suspendisse bibendum lectus arcu, at auctor tortor egestas eget. In egestas eleifend lacus, id
+                    dictum magna eleifend eu. Mauris posuere mi lorem, non porta diam imperdiet quis. Phasellus vel
+                    magna eu nibh dapibus dapibus vel eget ligula.
+                </p>
+            </div>
+            <div class="card" id="section_5">
+                <h3>Section 5</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, nisi vitae tempor scelerisque,
+                    dolor mauris faucibus erat, vitae faucibus odio nisl at lorem. Integer sit amet orci purus. Nunc vel
+                    odio bibendum, semper augue vestibulum, elementum mi. Phasellus at luctus ex. Vivamus nec luctus
+                    orci, sit amet placerat lorem. Maecenas ultricies leo id leo faucibus tincidunt. Vestibulum molestie
+                    in dolor vitae gravida. Etiam convallis, mi sed sodales vulputate, nibh urna ullamcorper lorem, quis
+                    hendrerit justo quam et ex. Etiam at placerat augue. Phasellus in dapibus odio. Morbi commodo, nunc
+                    vel sodales elementum, nibh lacus euismod libero, ac tincidunt felis nisl eu sapien. Nulla facilisi.
+                    Donec consequat ultrices odio, quis egestas augue placerat sit amet. Proin eu risus nec massa cursus
+                    cursus sed sed dui.
+                </p>
+                <p>
+                    Aliquam in dictum quam. Aenean ut aliquet lorem. Pellentesque ac nisl condimentum, luctus leo eget,
+                    sagittis elit. Integer arcu dui, sagittis a libero et, tempor mattis diam. Pellentesque at ultricies
+                    est. Nullam nisl ex, egestas non ornare eget, tristique porttitor lectus. Vestibulum tempus sit amet
+                    lorem nec tincidunt. Ut at sodales est. Suspendisse laoreet risus ac libero efficitur eleifend.
+                    Suspendisse bibendum lectus arcu, at auctor tortor egestas eget. In egestas eleifend lacus, id
+                    dictum magna eleifend eu. Mauris posuere mi lorem, non porta diam imperdiet quis. Phasellus vel
+                    magna eu nibh dapibus dapibus vel eget ligula.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 15px;background: white;border: solid 1px lightgray;border-radius: 3px;margin: 10px;">
+        <h1>
+            Footer
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque porttitor scelerisque. Vivamus et tempus tortor. Duis vel vestibulum lacus, et cursus sapien. Suspendisse ut magna dapibus, iaculis urna in, laoreet ante. Suspendisse at ipsum et enim auctor venenatis. Suspendisse aliquet ante eget mi consectetur, id dapibus urna commodo. Nullam sollicitudin nibh sit amet dui malesuada, quis ornare tellus consectetur. Nulla venenatis accumsan lectus, at ullamcorper tortor pulvinar in. Integer libero dui, consequat eu commodo sed, sodales sit amet leo. Proin tempor diam vitae metus lobortis blandit. Nam neque odio, vehicula luctus pulvinar non, scelerisque eleifend lectus. Suspendisse eleifend enim velit, eu fermentum nunc molestie nec. Donec sodales congue eros, eu scelerisque ligula pretium et. Etiam porttitor ligula volutpat lectus auctor, quis facilisis turpis rutrum.
+
+            In vestibulum, mi a tristique sodales, odio risus sodales massa, sed consectetur tellus urna nec turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer at magna congue ipsum placerat rhoncus quis quis odio. Donec vulputate elit tellus, eget consectetur lacus molestie vel. Quisque nec malesuada mauris. Suspendisse iaculis semper justo non varius. Nulla cursus sapien eu dignissim aliquet.
+            
+            Integer porttitor bibendum leo et pulvinar. Suspendisse potenti. Ut ullamcorper arcu eget purus placerat mollis. Ut tortor leo, euismod vitae metus a, convallis sollicitudin justo. Mauris vel semper nunc. Donec ullamcorper lectus dolor, at rutrum sem rhoncus consequat. Aenean et elementum nunc. Nullam quis fringilla odio, et tincidunt nunc. Sed vitae neque a arcu luctus ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec quis mi quam. Etiam diam sapien, suscipit vitae euismod tincidunt, auctor non neque. Donec eget porttitor lorem.
+            
+            Sed libero sem, interdum et convallis a, efficitur facilisis enim. Ut et tortor dignissim, finibus risus non, luctus mi. Nullam eros libero, pellentesque a efficitur vitae, dapibus in enim. Sed interdum non tellus nec elementum. Nunc a mollis sapien. Nam sapien erat, suscipit at mi nec, congue lobortis sem. Donec libero lectus, condimentum eget feugiat eu, placerat sed neque. Etiam consequat eleifend feugiat.
+            
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc non porttitor lorem, sed congue est. In euismod tellus magna, at imperdiet erat imperdiet nec. Proin dui diam, vehicula eget porta nec, interdum vitae leo. Donec at leo sit amet urna tristique semper. Nam malesuada, turpis sit amet vulputate convallis, nisi mi congue quam, vel dignissim felis magna quis enim. Praesent iaculis nisi leo, eu egestas ipsum malesuada vitae. Maecenas ac egestas enim, sit amet efficitur est. Ut consequat feugiat justo, sed mattis justo interdum vitae. Suspendisse potenti. Nunc ac finibus eros, quis vulputate nunc
+        </p>
+    </div>
+</body>
+
+</html>
