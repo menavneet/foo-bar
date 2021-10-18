@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var requestFunction=function(){
+            // console.log("test 1")
+            url = "https://reqres.in/api/users?page=1"
+            client = new XMLHttpRequest()
+            client.open("GET",url,false)
+            client.send()
+            data = JSON.parse(client.responseText)
+            users   = data.data 
+            emails =  users.map((x)=>'<img src='+x.avatar+' />'+'<div class="email">'+x.email+'</div>')
+            if(Array.isArray(emails)){
+                emails  = emails.join("")
+            }
+            document.getElementById("mainbody").innerHTML = emails
+        }
+    </script>
+    <style>
+        .email{
+            padding:10px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: solid 1px lightgray;
+            margin: 3px;
+            border-radius: 3px;
+        }
+        .email:hover{
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbody">
+        <!-- <div class="email"> george.bluth@reqres.in</div> -->
+    </div>
+    <button onclick="requestFunction()">Hello</button>
+</body>
+</html>
