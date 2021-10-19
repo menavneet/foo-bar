@@ -7,7 +7,6 @@ function readFromFile(file_name){
 }
 
 http.createServer(function(req,res){
-    console.log(req.url)
     switch (req.url) {
         case "/login":
             data = readFromFile("login.html")
