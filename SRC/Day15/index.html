@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hello(params) {
+            console.log("This is working")
+        }
+        function saveLocalData() {
+            window.localStorage.setItem("key1","this is a value localStorage")
+            console.log("Local Data is Saved")
+        }
+        function getLocalData(params) {
+            var data = window.localStorage.getItem("key1")
+            console.log("The local Storage  data",data)
+        }
+        function saveSessionData() {
+            window.sessionStorage.setItem("key1","this is a value sessionStorage")
+            console.log("Session Data is Saved")
+        }
+        function getSessionData(params) {
+            var data = window.sessionStorage.getItem("key1")
+            console.log("The Session Storage  data",data)
+        }
+    </script>
+</head>
+<body>
+    <button onclick="hello()">hello</button>
+    <button onclick="saveLocalData()">saveLocalData</button>
+    <button onclick="getLocalData()">getLocalData</button>
+    <button onclick="saveSessionData()">saveSessionData</button>
+    <button onclick="getSessionData()">getSessionData</button>
+</body>
+</html>
